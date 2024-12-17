@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">上传绘画，获得作品建议</view>
+  <view class="main">
+    <!-- <camera class="camera" device-position="back" frame-size="large" flash="on"></camera> -->
+    <image  mode="aspectFit" class="img" src="{{img_path}}"></image>
+    <button type="primary" disabled="{{photoDisabled}}" class="photo" bindtap="takePhoto">上传绘图</button>
+    <button type="primary" disabled="{{cookbookDisabled}}" class="cookbook" bindtap="takeCookbook">获取建议</button>
+    <view class="message">
+     {{message}}
+      <!-- <rich-text mode="web" nodes=""></rich-text> -->
+    </view>
+    </view>
+</view>
